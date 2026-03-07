@@ -1,0 +1,15 @@
+# Gradle
+.gradle/
+build/
+
+# Eclipse
+/.classpath
+/.project
+/.settings/
+/*.iml
+
+# OS
+.DS_Store
+
+# Logs
+*.log
