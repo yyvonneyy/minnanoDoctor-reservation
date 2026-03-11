@@ -17,7 +17,8 @@ public class User {
 	@GeneratedValue(strategy = GenerationType.IDENTITY)
 	private Long id;
 	
-	private String email;
+	 @Column(unique = true)		//同じメールは使用不可。
+	    private String email;
 	
 	private String password;
 	
