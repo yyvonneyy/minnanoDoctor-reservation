@@ -6,6 +6,7 @@ import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 
 import com.minnanoDoctor.reservation.dto.LoginRequest;
+import com.minnanoDoctor.reservation.dto.LoginResponse;
 import com.minnanoDoctor.reservation.entity.User;
 import com.minnanoDoctor.reservation.service.UserService;
 
@@ -24,7 +25,7 @@ public class AuthController {
 	}
 	
 	@PostMapping("/login")
-	public User login(@RequestBody LoginRequest request) {
+	public LoginResponse login(@RequestBody LoginRequest request) {
 	    return userService.login(request);
 	}
 
